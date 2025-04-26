@@ -1,0 +1,196 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* You can keep this here or in the JavaScript */
+}
+
+
+header {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 1em; /* Add some padding around the header content */
+    display: flex; /* Enable flexbox for layout */
+    justify-content: space-between; /* Space out the heading and navigation */
+    align-items: center; /* Vertically align items in the header */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding from the list */
+    margin: 0; /* Remove default margins from the list */
+    display: flex; /* Arrange list items horizontally */
+}
+
+nav ul li {
+    margin-left: 1em; /* Add some space between the list items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Dark gray link color */
+}
+
+nav a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Style the About Me section */
+#about {
+    padding: 2em; /* Add more padding around the section */
+    text-align: center; /* Center the text within the section */
+}
+
+#about h2 {
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 1em; /* Add some space below the heading */
+}
+
+#about p {
+    line-height: 1.6; /* Improve readability by adding line height */
+    margin-bottom: 1em; /* Add some space between paragraphs */
+    color: #555; /* Slightly lighter text color for paragraphs */
+}
+
+/* Style the Projects section */
+#projects {
+    padding: 2em; /* Add padding around the projects section */
+    text-align: center; /* Center the heading */
+}
+
+#projects h2 {
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 1.5em; /* Add more space below the heading */
+}
+
+.project-card {
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners for the card */
+    padding: 1.5em; /* Padding inside the card */
+    margin-bottom: 1.5em; /* Space between project cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Align text within the card to the left */
+    max-width: 600px; /* Limit the width of the cards */
+    margin-left: auto; /* Center the cards horizontally */
+    margin-right: auto; /* Center the cards horizontally */
+}
+
+.project-card h3 {
+    color: #333; /* Dark gray for the project title */
+    margin-top: 0; /* Remove default top margin for the heading */
+    margin-bottom: 0.5em; /* Add space below the title */
+}
+
+.project-card p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 1em; /* Space between paragraphs */
+    color: #555;
+}
+
+.project-card strong {
+    font-weight: bold; /* Make "Technologies Used" bold */
+    color: #333;
+}
+
+/* Style the Contact section */
+#contact {
+    padding: 2em; /* Add padding around the contact section */
+    text-align: center; /* Center the content */
+}
+
+#contact h2 {
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 1em; /* Add space below the heading */
+}
+
+#contact p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 1.5em; /* Add space below the paragraph */
+    color: #555;
+}
+
+#contact ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0 auto; /* Center the list horizontally */
+    max-width: 300px; /* Limit the width of the list */
+}
+
+#contact li {
+    margin-bottom: 0.8em; /* Add space between list items */
+}
+
+#contact li strong {
+    font-weight: bold; /* Make the label bold */
+    color: #333;
+    margin-right: 0.5em; /* Add some space after the label */
+}
+
+#contact li a {
+    color: #007bff; /* Blue color for the links */
+    text-decoration: none; /* Remove underlines */
+}
+
+#contact li a:hover {
+    text-decoration: underline; /* Add underline on hover for better feedback */
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.profile-image-container {
+    width: 350px; /* Increased width */
+    height: 350px; /* Increased height */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 2em; /* Increased margin-bottom for more space below the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* Header Styles (you might not need much here as Bootstrap handles it) */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    margin-left: 1em;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* You can keep your existing styles for profile image, about, projects, contact */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Add a smooth transition for the fade effect */
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa; /* Light gray background, consistent with projects */
+    color: #555; /* Darker gray text */
+    padding: 1em 0; /* Add some padding top and bottom */
+    text-align: center; /* Center the text */
+    font-size: 0.9em; /* Slightly smaller font size */
+    border-top: 1px solid #ddd; /* Add a subtle top border for separation */
+}
+
+footer p {
+    margin: 0.5em 0; /* Add some vertical margin to the paragraph */
+}
