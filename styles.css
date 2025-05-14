@@ -1,196 +1,209 @@
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --bg-color: #e9f5fc; /* Softer baby blue */
+  --text-color: #111;
+  --card-bg: #fff;
+  --card-text: #333;
+  --button-bg: #007bff;
+  --button-text: #fff;
+  --border-radius: 12px;
+  --link-hover: #0056b3;
+}
+
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth; /* You can keep this here or in the JavaScript */
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background: var(--bg-color);
+  transition: background-color 0.3s ease;
 }
 
-
-header {
-    background-color: #f0f0f0; /* Light gray background */
-    padding: 1em; /* Add some padding around the header content */
-    display: flex; /* Enable flexbox for layout */
-    justify-content: space-between; /* Space out the heading and navigation */
-    align-items: center; /* Vertically align items in the header */
+/* Navbar */
+.navbar {
+  padding: 1rem 0;
 }
 
-nav ul {
-    list-style: none; /* Remove bullet points from the list */
-    padding: 0; /* Remove default padding from the list */
-    margin: 0; /* Remove default margins from the list */
-    display: flex; /* Arrange list items horizontally */
-}
-
-nav ul li {
-    margin-left: 1em; /* Add some space between the list items */
-}
-
-nav a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #333; /* Dark gray link color */
-}
-
-nav a:hover {
-    color: #007bff; /* Blue color on hover */
-}
-
-/* Style the About Me section */
-#about {
-    padding: 2em; /* Add more padding around the section */
-    text-align: center; /* Center the text within the section */
-}
-
-#about h2 {
-    color: #007bff; /* Blue color for the heading */
-    margin-bottom: 1em; /* Add some space below the heading */
-}
-
-#about p {
-    line-height: 1.6; /* Improve readability by adding line height */
-    margin-bottom: 1em; /* Add some space between paragraphs */
-    color: #555; /* Slightly lighter text color for paragraphs */
-}
-
-/* Style the Projects section */
-#projects {
-    padding: 2em; /* Add padding around the projects section */
-    text-align: center; /* Center the heading */
-}
-
-#projects h2 {
-    color: #007bff; /* Blue color for the heading */
-    margin-bottom: 1.5em; /* Add more space below the heading */
-}
-
-.project-card {
-    background-color: #fff; /* White background for the card */
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 8px; /* Rounded corners for the card */
-    padding: 1.5em; /* Padding inside the card */
-    margin-bottom: 1.5em; /* Space between project cards */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: left; /* Align text within the card to the left */
-    max-width: 600px; /* Limit the width of the cards */
-    margin-left: auto; /* Center the cards horizontally */
-    margin-right: auto; /* Center the cards horizontally */
-}
-
-.project-card h3 {
-    color: #333; /* Dark gray for the project title */
-    margin-top: 0; /* Remove default top margin for the heading */
-    margin-bottom: 0.5em; /* Add space below the title */
-}
-
-.project-card p {
-    line-height: 1.6; /* Improve readability */
-    margin-bottom: 1em; /* Space between paragraphs */
-    color: #555;
-}
-
-.project-card strong {
-    font-weight: bold; /* Make "Technologies Used" bold */
-    color: #333;
-}
-
-/* Style the Contact section */
-#contact {
-    padding: 2em; /* Add padding around the contact section */
-    text-align: center; /* Center the content */
-}
-
-#contact h2 {
-    color: #007bff; /* Blue color for the heading */
-    margin-bottom: 1em; /* Add space below the heading */
-}
-
-#contact p {
-    line-height: 1.6; /* Improve readability */
-    margin-bottom: 1.5em; /* Add space below the paragraph */
-    color: #555;
-}
-
-#contact ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0 auto; /* Center the list horizontally */
-    max-width: 300px; /* Limit the width of the list */
-}
-
-#contact li {
-    margin-bottom: 0.8em; /* Add space between list items */
-}
-
-#contact li strong {
-    font-weight: bold; /* Make the label bold */
-    color: #333;
-    margin-right: 0.5em; /* Add some space after the label */
-}
-
-#contact li a {
-    color: #007bff; /* Blue color for the links */
-    text-decoration: none; /* Remove underlines */
-}
-
-#contact li a:hover {
-    text-decoration: underline; /* Add underline on hover for better feedback */
-}
-
-html, body {
-    scroll-behavior: smooth;
-}
-
-.profile-image-container {
-    width: 350px; /* Increased width */
-    height: 350px; /* Increased height */
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 2em; /* Increased margin-bottom for more space below the image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the container without distortion */
-}
-
-/* Header Styles (you might not need much here as Bootstrap handles it) */
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #007bff !important;
 }
 
 .navbar-nav .nav-link {
-    color: #333;
-    margin-left: 1em;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #007bff;
+  color: var(--link-hover);
 }
 
-/* You can keep your existing styles for profile image, about, projects, contact */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* Profile Image */
+.profile-image-container {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2em auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sections */
+section {
+  padding: 4rem 1rem;
+}
+
+h2 {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Skills */
+.skills-grid i {
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.skills-grid i:hover {
+  transform: scale(1.2);
+}
+
+.skills-grid p {
+  margin-top: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+/* Project Cards */
+.project-card {
+  background: var(--card-bg);
+  color: var(--card-text);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 0.8rem;
+}
+
+.project-card p {
+  line-height: 1.8;
+}
+
+/* Contact Form */
+.contact-form-container {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-floating label {
+  color: #666;
+}
+
+.form-control {
+  border-radius: var(--border-radius);
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button[type="submit"] {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--link-hover);
+}
+
+/* Download CV Button */
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--link-hover);
+  transform: scale(1.05);
+}
+
+/* Fade-in animation */
 .fade-in {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Add a smooth transition for the fade effect */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
 }
 
 .fade-in.visible {
-    opacity: 1;
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-    background-color: #f8f9fa; /* Light gray background, consistent with projects */
-    color: #555; /* Darker gray text */
-    padding: 1em 0; /* Add some padding top and bottom */
-    text-align: center; /* Center the text */
-    font-size: 0.9em; /* Slightly smaller font size */
-    border-top: 1px solid #ddd; /* Add a subtle top border for separation */
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
-footer p {
-    margin: 0.5em 0; /* Add some vertical margin to the paragraph */
+/* Contact Info Section */
+#contact ul {
+  padding-left: 0;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+#contact ul li {
+  margin-bottom: 0.75rem;
+}
+
+#contact a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#contact a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
 }
