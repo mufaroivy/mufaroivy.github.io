@@ -1,8 +1,7 @@
-/* Import Inter font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --bg-color: #e9f5fc; /* Softer baby blue */
+  --bg-color: #e9f5fc; 
   --text-color: #111;
   --card-bg: #fff;
   --card-text: #333;
@@ -21,7 +20,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Navbar */
 .navbar {
   padding: 1rem 0;
 }
@@ -48,7 +46,6 @@ body {
   z-index: 999;
 }
 
-/* Profile Image */
 .profile-image-container {
   width: 220px;
   height: 220px;
@@ -67,7 +64,6 @@ body {
   object-fit: cover;
 }
 
-/* Sections */
 section {
   padding: 4rem 1rem;
 }
@@ -78,7 +74,6 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-/* Skills */
 .skills-grid i {
   color: #007bff;
   transition: transform 0.3s ease;
@@ -95,7 +90,6 @@ h2 {
   font-size: 1rem;
 }
 
-/* Project Cards */
 .project-card {
   background: var(--card-bg);
   color: var(--card-text);
@@ -118,7 +112,6 @@ h2 {
   line-height: 1.8;
 }
 
-/* Contact Form */
 .contact-form-container {
   background: var(--card-bg);
   padding: 2rem;
@@ -154,7 +147,6 @@ button[type="submit"]:hover {
   background-color: var(--link-hover);
 }
 
-/* Download CV Button */
 .btn-primary {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -164,7 +156,6 @@ button[type="submit"]:hover {
   transform: scale(1.05);
 }
 
-/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -176,7 +167,6 @@ button[type="submit"]:hover {
   transform: translateY(0);
 }
 
-/* Footer */
 footer {
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
@@ -186,7 +176,6 @@ footer {
   text-align: center;
 }
 
-/* Contact Info Section */
 #contact ul {
   padding-left: 0;
   font-size: 1.1rem;
