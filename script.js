@@ -1,4 +1,3 @@
-// Smooth scroll for anchor links
 const scrollLinks = document.querySelectorAll('a[href^="#"]');
 scrollLinks.forEach(link => {
   link.addEventListener('click', function (e) {
@@ -10,7 +9,6 @@ scrollLinks.forEach(link => {
   });
 });
 
-// Fade-in effect on scroll
 const fadeInElements = document.querySelectorAll('.fade-in');
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
@@ -23,7 +21,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 fadeInElements.forEach(el => observer.observe(el));
 
-// Collapse navbar on mobile after link click
 const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
 const navbarCollapse = document.querySelector('.navbar-collapse');
 
